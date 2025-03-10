@@ -1,0 +1,15 @@
+#banner {
+
+}
+
+#bannerLogoContainer {
+    margin: 0px; 
+    text-align: center;
+}
+
+#bannerItemsContainer {
+    display: flex;
+    margin: auto;
+    padding: 12px;
+    text-align: center;
+}
