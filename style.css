@@ -1,15 +1,398 @@
-#banner {
-
+@font-face {
+    font-family: "airstrike";
+    src: url(fonts/airstrike/airstrike.ttf);
 }
 
-#bannerLogoContainer {
-    margin: 0px; 
-    text-align: center;
+@font-face {
+    font-family: "airstrikecond";
+    src: url(fonts/airstrike/airstrikecond.ttf);
 }
 
-#bannerItemsContainer {
+.navbar {
     display: flex;
-    margin: auto;
-    padding: 12px;
+    flex-direction: column;
+    background-color: blue;
+    -webkit-box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
+box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
+}
+
+.navbar h1 {
+    font-family: "airstrike";
+    font-weight: 500;
+    text-shadow: 2px 1px 3px rgba(0,0,0,0.48);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    font-family: "airstrikecond";
+}
+
+.nav-buttons div {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nav-buttons button {
     text-align: center;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color:white;
+
+    -webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+}
+
+.nav-buttons button:hover {
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+
+.banner h1 {
+    align-items: center;
+    margin: 0px;
+    font-size: 120px;
+    color: white;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+.h-intro {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 125px
+}
+
+.motto .main {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    padding-bottom: 0px;
+}
+
+.motto .sub {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.video {
+    padding-top: 20px;
+}
+
+.h-gallery {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    
+}
+
+.h-title {
+    background-color: grey;
+}
+
+.h-title h2 {
+    font-size: 35px;
+}
+
+.kep-container {
+    padding-top: 50px;
+    padding-bottom: 170px;
+    background-color: darkslategrey;
+}
+
+.kep-container .row {
+    padding-top: 100px;
+    margin: auto;
+}
+
+.kep-box {
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.kep-box img {
+    width: 250px;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+.kep-box img:hover {
+    -webkit-transform: scale(1.4);
+}
+
+.footer {
+    background-color: rgb(35, 59, 59);
+    display: flex;
+    flex-direction: column;
+}
+
+.connections {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.c-button {
+    padding: 20px;
+}
+
+.c-button>img {
+    opacity: 0.5;
+
+    -webkit-transition: opacity 100ms linear;
+    -moz-transition: opacity 100ms linear;
+    -o-transition: opacity 100ms linear;
+    -ms-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+}
+
+.c-button>img:hover {
+    opacity: 1;
+    cursor:pointer;
+}
+
+.copyright {
+    padding: 20px;
+    background-color: darkslategrey;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 0px;
+    font-size: 15px;
+    color: white
+}
+
+.intro-presentations {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-top: 100px;
+    padding-bottom: 0px;
+}
+
+.fadeInLeft {
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+}
+
+.h-intro_who-are-we {
+    margin: 0;
+    justify-content: center;
+}
+
+.who-are-we_image .who-are-we_text {
+    padding: 0;
+    margin: auto;
+}
+
+.rolunk-ref {
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.who-are-we_image  {
+    text-align: center;
+}
+
+.who-are-we_text h6 {
+    width: 80%; 
+    margin: auto;
+}
+
+.who-are-we_text h5 {
+    text-align: center;
+}
+
+.who-are-we_image img {
+    width: 70%;
+}
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0px);
+    }
+}
+@-o-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -o-transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateX(0px);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.highlightLink {
+    color: rgb(15, 0, 37);
+    text-decoration: none;
+
+    -webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+}
+
+.highlightLink:hover {
+    color: rgb(73, 0, 132)
+}
+
+.r-jani .r-richo {
+    margin: auto;
+    justify-content: center;
+}
+
+.r-jani_image img {
+    width: 45%;
+}
+
+.r-richo_image img {
+    width: 45%;
+}
+
+.r-jani_image {
+    text-align: center;
+}
+
+.r-richo_image {
+    text-align: center;
+}
+
+.r-jani_text {
+    text-align: center;
+}
+
+.r-richo_text {
+    text-align: center;
+}
+
+.r-jani_text h4 {
+    text-align: left;
+}
+
+.r-jani_text h6 {
+    text-align: left;
+}
+
+.r-richo_text h4 {
+    text-align: right;
+}
+.r-richo_text h6 {
+    text-align: right;
+}
+
+.r-richo_text h6 {
+    width: 90%;
+    justify-self: right;
+}
+
+.r-jani_text h6 {
+    width: 90%;
+}
+
+.rolunk-main {
+    margin-top: 250px;
+}
+
+.baratsag_img img {
+    width: 30%
+}
+
+.baratsag_img {
+    text-align: center;
+}
+
+.baratsag_text {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.baratsag_text h6 {
+    width: 50%;
+    justify-self: center;
+}
+
+.baratsag {
+    margin-top: 175px;
+    padding-bottom: 170px;
+}
+
+.termek-title h2 {
+    padding-left: 17px;
+    padding-top: 17px;
+}
+
+.termek-title {
+    margin-bottom: 100px;
+}
+
+.termek_img img {
+    width: 60%;
+}
+
+.termek-col {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+
+.kosarba-click:hover {
+    cursor:pointer;
+}
+
+.termek {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.btn-kosarba {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.kapcsolatok {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
 }
