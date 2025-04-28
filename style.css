@@ -8,10 +8,15 @@
     src: url(fonts/airstrike/airstrikecond.ttf);
 }
 
+@font-face {
+    font-family: "airstrikebullet";
+    src: url(fonts/airstrike/airstrikebullet.ttf);
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: rgb(11, 11, 12);
     -webkit-box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
 -moz-box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
 box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
@@ -106,7 +111,7 @@ box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
 .kep-container {
     padding-top: 50px;
     padding-bottom: 170px;
-    background-color: darkslategrey;
+    background-color: rgb(30, 30, 32);
 }
 
 .kep-container .row {
@@ -132,7 +137,7 @@ box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
 }
 
 .footer {
-    background-color: rgb(35, 59, 59);
+    background-color: rgb(11, 11, 12);
     display: flex;
     flex-direction: column;
 }
@@ -147,7 +152,7 @@ box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
     padding: 20px;
 }
 
-.c-button>img {
+.c-button>a {
     opacity: 0.5;
 
     -webkit-transition: opacity 100ms linear;
@@ -157,14 +162,14 @@ box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
     transition: opacity 100ms linear;
 }
 
-.c-button>img:hover {
+.c-button>a:hover {
     opacity: 1;
     cursor:pointer;
 }
 
 .copyright {
     padding: 20px;
-    background-color: darkslategrey;
+    background-color: rgb(18, 18, 20);
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 0px;
@@ -330,7 +335,7 @@ box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
 }
 
 .rolunk-main {
-    margin-top: 250px;
+    margin-top: 160px;
 }
 
 .baratsag_img img {
@@ -393,6 +398,17 @@ box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.44);
 
 .kapcsolatok {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 35px;
     padding-bottom: 200px;
+}
+
+.rolunk-title h1 {
+    font-size: 80px;
+    color: black;
+    justify-self: center;
+    font-family: 'airstrike';
+}
+
+.rolunk-title {
+    background-color: rgba(128, 128, 128, 0.342);
 }
